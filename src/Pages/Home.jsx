@@ -27,7 +27,7 @@ export default function Home() {
             </div>
             <div className='md:px-20 lg:px-32 bg-[#ffebd6] flex flex-col md:flex-row gap-4 md:h-28 pb-10 my-10'>
                 <div className='md:w-[40%] bg-transparent'><img src={SecondImg} className='-mt-[60px] mx-auto bg-transparent' alt="my-img" /></div>
-                <div className='md:w-[60%] lg:w-[50%] bg-transparent flex flex-col sm:flex-row gap-4'>
+                <div className='md:w-[60%] lg:w-[50%] bg-transparent flex flex-col md:h-28 justify-center items-center sm:flex-row gap-4'>
                     <div className='flex flex-col bg-transparent sm:gap-1 items-center justify-center w-full'>
                         <h4 className='text-[35px] bg-transparent font-popp font-bold'>120K</h4>
                         <p className='text-[12px] bg-transparent font-popp font-normal'>Nutritional complete</p>
@@ -116,7 +116,7 @@ export default function Home() {
             </div>
             {/*Client says section */}
             <div className='container my-16'>
-                <div className='flex flex-col md:flex-row p-5 sm:p-10 pb-0 pl-0 bg-[#ffebd6] rounded-xl'>
+                <div className='flex flex-col md:flex-row p-5 sm:p-10 lg:p-0 pb-0 pl-0 bg-[#ffebd6] rounded-xl'>
                 <div className='md:w-1/2 bg-transparent '><img src={CustomerSays} className='w-[100%] lg:w-[90%]' alt="" /></div>
                 <div className='md:w-1/2 p-5 sm:p-10 md:p-0 bg-transparent flex flex-col gap-3 justify-center'>
                     <h1 className=' text-[25px] leading-[30px] md:text-[35px] font-bold bg-transparent md:leading-[40px] font-popp'>What Our Client Says</h1>
