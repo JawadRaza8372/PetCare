@@ -5,7 +5,7 @@ export default function Products(props) {
   return (
     <>
           <div className='mx-2 bg-transparent'>
-                        <div className='bg-[#ffebd6] p-5 rounded-xl flex flex-col gap-1 relative '>
+                        <div className='bg-[#ffebd6] p-5 rounded-xl flex flex-col gap-1 relative z-0'>
                             <img src={Pedigree} alt="my-img" className='bg-wite p-5 rounded-md ' />
                             <h3 className='bg-transparent text-[16px] md:text-[18px] font-semibold'>{props.heading}</h3>
                             <h4 className='bg-transparent text-[16px] md:text-[18px]'>{props.size}</h4>

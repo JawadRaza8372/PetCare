@@ -119,7 +119,7 @@ export default function Home() {
                     <button className='flex items-center bg-[#ffebd6] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#fb6518] rounded-md text-[#fb6518] font-medium font-popp'>PetFoods</button>
                 </div>
               
-                <Slider className='flex gap-3 bg-transparent' {...settings}>
+                <Slider className='flex gap-3 bg-transparent z-0' {...settings}>
                  {
                       OurProducts.map((val)=>{
                         return   <Products img={val.img} heading={val.heading} size={val.size} price={val.price} />
