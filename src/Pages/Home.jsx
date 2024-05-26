@@ -8,7 +8,6 @@ import Homevisit from "../Utilities/home.png";
 import Veterinery from "../Utilities/interaction.png";
 import AnimalsMean from "../Utilities/3.png";
 import Pedigree from "../Utilities/pedigree.png";
-import { BsCart } from "react-icons/bs";
 import CustomerSays from "../Utilities/4.png";
 import { IoIosStar } from "react-icons/io";
 import User from "../Utilities/user.jpg";
@@ -17,7 +16,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Petform from "../Utilities/pet-form.png"
+import Products from '../Components/Products';
 export default function Home() {
+    const OurProducts=[
+        {img:{Pedigree}, heading:"Sonima style BBQ", size:"  All cat size", price:"$70.00"},
+        {img:{Pedigree}, heading:"Sonima style BBQ", size:"  All cat size", price:"$70.00"},
+        {img:{Pedigree}, heading:"Sonima style BBQ", size:"  All cat size", price:"$70.00"},
+    ]
     var settings = {
         dots: false,
         autoplay:true,
@@ -113,29 +118,15 @@ export default function Home() {
                     <button className='flex items-center bg-[#ffebd6] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#fb6518] rounded-md text-[#fb6518] font-medium font-popp'>DogTreats</button>
                     <button className='flex items-center bg-[#ffebd6] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#fb6518] rounded-md text-[#fb6518] font-medium font-popp'>PetFoods</button>
                 </div>
+              
                 <Slider className='flex gap-3 bg-transparent' {...settings}>
-                        <div className='bg-[#ffebd6] p-5 rounded-xl flex flex-col gap-1 relative shadow-2xl'>
-                            <img src={Pedigree} alt="my-img" className='bg-wite p-5 rounded-md' />
-                            <h3 className='bg-transparent text-[16px] md:text-[18px] font-semibold'>Sonima style BBQ</h3>
-                            <h4 className='bg-transparent text-[16px] md:text-[18px]'>All cat size</h4>
-                            <h5 className='bg-transparent text-[15px] md:text-[17px] font-bold'>$70.00</h5>
-                            <div className='absolute bottom-0 right-0 p-3 lg:p-5 rounded-br-xl bg-[#fb6518]'><BsCart className='text-white text-[22px] bg-transparent' /></div>
-                        </div>
-                        <div className='bg-[#ffebd6] p-5 rounded-xl flex flex-col gap-1 relative shadow-2xl'>
-                            <img src={Pedigree} alt="my-img" className='bg-wite p-5 rounded-md' />
-                            <h3 className='bg-transparent text-[16px] md:text-[18px] font-semibold'>Sonima style BBQ</h3>
-                            <h4 className='bg-transparent text-[16px] md:text-[18px]'>All cat size</h4>
-                            <h5 className='bg-transparent text-[15px] md:text-[17px] font-bold'>$70.00</h5>
-                            <div className='absolute bottom-0 right-0 p-3 lg:p-5 rounded-br-xl bg-[#fb6518]'><BsCart className='text-white text-[22px] bg-transparent' /></div>
-                        </div>
-                        <div className='bg-[#ffebd6] p-5 rounded-xl flex flex-col gap-1 relative shadow-2xl'>
-                            <img src={Pedigree} alt="my-img" className='bg-wite p-5 rounded-md' />
-                            <h3 className='bg-transparent text-[16px] md:text-[18px] font-semibold'>Sonima style BBQ</h3>
-                            <h4 className='bg-transparent text-[16px] md:text-[18px]'>All cat size</h4>
-                            <h5 className='bg-transparent text-[15px] md:text-[17px] font-bold'>$70.00</h5>
-                            <div className='absolute bottom-0 right-0 p-3 lg:p-5 rounded-br-xl bg-[#fb6518]'><BsCart className='text-white text-[22px] bg-transparent' /></div>
-                        </div>
-                    </Slider>
+                 {
+                      OurProducts.map((val)=>{
+                        return   <Products img={val.img} heading={val.heading} size={val.size} price={val.price} />
+                         })
+                 }
+                   </Slider>
+              
             </div>
             {/*Client says section */}
             <div className='container my-16'>
@@ -168,8 +159,9 @@ export default function Home() {
                     <img src={Petform} className='bg-transparent' alt="my-img" />
                 </div>
                 <div className='md:w-1/2 bg-transparent'>
-                    
-                <form className="flex flex-col gap-5 bg-transparent">
+                <h1 className=' text-[25px] leading-[30px] md:text-[35px] font-bold bg-transparent md:leading-[40px] font-popp'>Contact Us</h1>
+                       
+                <form className="flex flex-col gap-5 bg-transparent mt-3">
             <div className="flex bg-transparent flex-col md:flex-row gap-3 md:gap-5 w-full ">
                 <div className="w-full bg-transparent">
                     <label className='bg-transparent' for="">Name <span className="bg-transparent text-lg text-red-500">*</span></label> <br/>

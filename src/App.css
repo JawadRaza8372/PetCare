@@ -3,7 +3,7 @@
 *{
     background-color: #fff6ed
 }
-/* .slick-slide {
-    margin-right:20px;
-} */
+.overflow-auto::-webkit-scrollbar{
+    width: 0px;
+}
 @tailwind utilities;

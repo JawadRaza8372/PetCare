@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <>
       {/* Header Section */}
-      <header className='container flex justify-between py-2 items-center relative'>
+      <header style={{position:open? 'sticky':'fixed'}} className='container flex justify-between py-2 items-center relative'>
         <h3 className='text-[#fb6518] font-bold text-3xl font-popp'>Pet.care</h3>
         <div className=' text-2xl ml-auto md:hidden' onClick={() => setOpen(!open)}>
             {open ? <IoReorderThreeOutline className='text-3xl' /> : <IoCloseSharp />}
@@ -26,13 +26,13 @@ export default function Navbar() {
        {
             open ? null :
             <>
-             <ul className='flex flex-col gap-3 py-8 px-2  border-b-2 absolute top-10 w-full left-0 shadowxl text-center border-[#ebdfd3]'>
+             <ul className='flex flex-col gap-3 py-8 h-[95%] px-2 z-10  fixed top-10 w-full left-0 shadowxl text-center border-[#ebdfd3]'>
             <li><a onClick={toggleMenu} className='text-[14px] font-medium cursor-pointer md:text-[16px]' href="">Dry Food</a></li>
             <li><a onClick={toggleMenu} className='text-[14px] font-medium cursor-pointer md:text-[16px]' href="">Services</a></li>
             <li><a onClick={toggleMenu} className='text-[14px] font-medium cursor-pointer md:text-[16px]' href="">Products</a></li>
             <li><a onClick={toggleMenu} className='text-[14px] font-medium cursor-pointer md:text-[16px]' href="">About us</a></li>
             <li><a onClick={toggleMenu} className='text-[14px] font-medium cursor-pointer md:text-[16px]' href="">Blog</a></li>
-        <Button1 btn1="Sign up"/>
+            <div className='mt-auto'><Button1 btn1="Sign up"/></div>
         </ul>
             </>
        }
