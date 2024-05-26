@@ -26,7 +26,7 @@ export default function Navbar() {
        {
             open ? null :
             <>
-             <ul className='flex flex-col gap-3 py-4  border-b-2 absolute top-10 w-full left-0 shadowxl text-center border-[#ebdfd3]'>
+             <ul className='flex flex-col gap-3 py-8 px-2  border-b-2 absolute top-10 w-full left-0 shadowxl text-center border-[#ebdfd3]'>
             <li><a onClick={toggleMenu} className='text-[14px] font-medium cursor-pointer md:text-[16px]' href="">Dry Food</a></li>
             <li><a onClick={toggleMenu} className='text-[14px] font-medium cursor-pointer md:text-[16px]' href="">Services</a></li>
             <li><a onClick={toggleMenu} className='text-[14px] font-medium cursor-pointer md:text-[16px]' href="">Products</a></li>
