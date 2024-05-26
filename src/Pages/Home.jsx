@@ -118,7 +118,7 @@ export default function Home() {
             <div className='container my-16'>
                 <div className='flex flex-col md:flex-row p-5 sm:p-10 lg:p-0 pb-0 pl-0 bg-[#ffebd6] rounded-xl'>
                 <div className='md:w-1/2 bg-transparent '><img src={CustomerSays} className='w-[100%] lg:w-[90%]' alt="" /></div>
-                <div className='md:w-1/2 p-5 sm:p-10 bg-transparent flex flex-col gap-3 justify-center'>
+                <div className='md:w-1/2 p-5 sm:p-10 bg-transparent flex flex-col gap-1 md:gap-3 justify-center'>
                     <h1 className=' text-[25px] leading-[30px] md:text-[35px] font-bold bg-transparent md:leading-[40px] font-popp'>What Our Client Says</h1>
                     <p className='text-[13px] md:text-[15px] bg-transparent '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos sapiente neque quam voluptatibus doloribus, ab obcaecati alias eius sit, eligendi repellat culpa officia, dolorem deleniti qui fugiat reprehenderit repellendus quae. Nisi, enim excepturi expedita fugit natus tenetur itaque ea.</p>
                    <div className='bg-transparent flex gap-1'>
