@@ -53,7 +53,7 @@ export default function Home() {
                 </div>
                 <div className='md:w-1/2 lg:w-[70%] flex justify-center my-5 sm:my-0'><img src={HomeImg} className='w-[100%] md:w-[80%]' alt="my-img" /></div>
             </div>
-            <div className='md:px-20 lg:px-32 bg-[#ffebd6] flex flex-col md:flex-row gap-4 md:h-28 pb-10 my-10'>
+            <div className='md:px-20 lg:px-32 bg-[#e371253d] flex flex-col md:flex-row gap-4 md:h-28 pb-10 my-10'>
                 <div className='md:w-[40%] bg-transparent'><img src={SecondImg} className='-mt-[60px] mx-auto bg-transparent' alt="my-img" /></div>
                 <div className='md:w-[60%] lg:w-[50%] bg-transparent flex flex-col md:h-28 justify-center items-center sm:flex-row gap-4'>
                     <div className='flex flex-col bg-transparent sm:gap-1 items-center justify-center w-full'>
@@ -75,22 +75,22 @@ export default function Home() {
                 <h1 className='text-center font-bold text-[33px] font-popp'>Our Services</h1>
                 <p className='mx-auto text-center font-normal sm:w-3/4 md:w-1/2 lg:w-[33%] leading-snug font-popp text-[14px] md:text-[16px]'>As a team of experienced Pet owners and lovers, we really get to know you and your pet.</p>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5'>
-                    <div className='flex flex-col gap-1 shadow-xl rounded-xl px-5 py-7 bg-[#f7e7d4] border border-[#fff6ed] text-center'>
+                    <div className='flex flex-col gap-1 shadow-xl rounded-xl px-5 py-7 bg-[#e371253d] border border-[#fff6ed] text-center'>
                         <img src={Petcare} className='bg-[#90ccff] p-3 m-auto rounded-md' alt="my-img" />
                         <h4 className='text-[20px] bg-transparent font-bold font-popp'>Pet Care</h4>
                         <p className='text-[13px] md:text-[14px] bg-transparent px-3 font-normal font-popp'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla enim ullam, distinctio nesciunt officia.</p>
                     </div>
-                    <div className='flex flex-col gap-1 shadow-xl rounded-xl px-5 py-7 bg-[#f7e7d4] border border-[#fff6ed] text-center'>
+                    <div className='flex flex-col gap-1 shadow-xl rounded-xl px-5 py-7 bg-[#e371253d] border border-[#fff6ed] text-center'>
                         <img src={Petgift} className='bg-[#cccccc] p-3 m-auto rounded-md' alt="my-img" />
                         <h4 className='text-[20px] bg-transparent font-bold font-popp'>Pet Gifts</h4>
                         <p className='text-[13px] md:text-[14px] bg-transparent px-3 font-normal font-popp'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla enim ullam, distinctio nesciunt officia.</p>
                     </div>
-                    <div className='flex flex-col gap-1 shadow-xl rounded-xl px-5 py-7 bg-[#f7e7d4] border border-[#fff6ed] text-center'>
+                    <div className='flex flex-col gap-1 shadow-xl rounded-xl px-5 py-7 bg-[#e371253d] border border-[#fff6ed] text-center'>
                         <img src={Homevisit} className='bg-[#3b4172b0] p-3 m-auto rounded-md' alt="my-img" />
                         <h4 className='text-[20px] bg-transparent font-bold font-popp'>Home Visit</h4>
                         <p className='text-[13px] md:text-[14px] bg-transparent px-3 font-normal font-popp'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla enim ullam, distinctio nesciunt officia.</p>
                     </div>
-                    <div className='flex flex-col gap-1 shadow-xl rounded-xl px-5 py-7 bg-[#f7e7d4] border border-[#fff6ed] text-center'>
+                    <div className='flex flex-col gap-1 shadow-xl rounded-xl px-5 py-7 bg-[#e371253d] border border-[#fff6ed] text-center'>
                         <img src={Veterinery} className='bg-[#67676ab5] p-3 m-auto rounded-md' alt="my-img" />
                         <h4 className='text-[20px] bg-transparent font-bold font-popp'>Veterinary</h4>
                         <p className='text-[13px] md:text-[14px] bg-transparent px-3 font-normal font-popp'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla enim ullam, distinctio nesciunt officia.</p>
@@ -99,8 +99,8 @@ export default function Home() {
                 </div>
             </div>
             {/*Animals mean section */}
-            <div className='my-10 bg-[#ffebd6] flex flex-col md:flex-row pt-10 md:pr-20'>
-                <div className='md:w-1/2 bg-transparent'><img src={AnimalsMean} className='w-[100%] md:w-[70%]' alt="" /></div>
+            <div className='my-10 bg-[#e371253d] flex flex-col md:flex-row pt-10 md:pr-20'>
+                <div className='md:w-1/2 bg-transparent'><img src={AnimalsMean} className='bg-transparent w-[100%] md:w-[70%]' alt="" /></div>
                 <div className='md:w-1/2 bg-transparent flex flex-col gap-2 p-5 sm:p-10 md:p-0 justify-center'>
                     <h1 className='text-[25px] sm:text-[30px] md:text-[35px] font-[900] bg-transparent leading-[25px] sm:leading-[40px] font-popp'>Animals have come to mean so much in our lives</h1>
                     <p className='text-[13px] md:text-[15px] bg-transparent '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos sapiente neque quam voluptatibus doloribus, ab obcaecati alias eius sit, eligendi repellat culpa officia, dolorem deleniti qui fugiat reprehenderit repellendus quae. Nisi, enim excepturi expedita fugit natus tenetur itaque ea.</p>
@@ -130,8 +130,8 @@ export default function Home() {
             </div>
             {/*Client says section */}
             <div className='container my-16'>
-                <div className='flex flex-col md:flex-row p-5 sm:p-10 lg:p-0 pb-0 pl-0 bg-[#ffebd6] rounded-xl'>
-                    <div className='md:w-1/2 bg-transparent '><img src={CustomerSays} className='w-[100%] lg:w-[90%]' alt="" /></div>
+                <div className='flex flex-col md:flex-row p-5 sm:p-10 lg:p-0 pb-0 pl-0 bg-[#e371253d] rounded-xl'>
+                    <div className='md:w-1/2 bg-transparent '><img src={CustomerSays} className=' bg-transparent w-[100%] lg:w-[90%]' alt="" /></div>
                     <div className='md:w-1/2 p-5 sm:p-10 bg-transparent flex flex-col gap-1 md:gap-3 justify-center'>
                         <h1 className=' text-[25px] leading-[30px] md:text-[35px] font-bold bg-transparent md:leading-[40px] font-popp'>What Our Client Says</h1>
                         <p className='text-[13px] md:text-[15px] bg-transparent '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos sapiente neque quam voluptatibus doloribus, ab obcaecati alias eius sit, eligendi repellat culpa officia, dolorem deleniti qui fugiat reprehenderit repellendus quae. Nisi, enim excepturi expedita fugit natus tenetur itaque ea.</p>
@@ -154,7 +154,7 @@ export default function Home() {
             </div>
              {/* contact page */}
              <div className=' my-16 container'>
-               <div className='bg-[#ffebd6] p-5 rounded-xl shadow-xl md:p-10 flex flex-col md:flex-row'>
+               <div className='bg-[#e371253d] p-5 rounded-xl shadow-xl md:p-10 flex flex-col md:flex-row'>
                 <div className='md:w-1/2 bg-transparent'>
                     <img src={Petform} className='bg-transparent' alt="my-img" />
                 </div>
