@@ -111,12 +111,12 @@ export default function Home() {
             <div className='container my-16 flex flex-col gap-10'>
                 <h1 className='text-center font-bold text-[25px] leading-[30px] md:text-[33px] md:leading-[40px] font-popp'>Our Best Selling Products</h1>
                 <div className='flex overflow-auto gap-3 justify-around'>
-                    <button className='flex items-center text-[#ffebd6] px-5 lg:px-10 py-2 pb-[10px] rounded-md bg-[#fb6518] font-medium font-popp'>AllProducts</button>
-                    <button className='flex items-center bg-[#ffebd6] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#fb6518] rounded-md text-[#fb6518] font-medium font-popp'>DogFoods</button>
-                    <button className='flex items-center bg-[#ffebd6] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#fb6518] rounded-md text-[#fb6518] font-medium font-popp'>CatFoods</button>
-                    <button className='flex items-center bg-[#ffebd6] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#fb6518] rounded-md text-[#fb6518] font-medium font-popp'>CatTreats</button>
-                    <button className='flex items-center bg-[#ffebd6] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#fb6518] rounded-md text-[#fb6518] font-medium font-popp'>DogTreats</button>
-                    <button className='flex items-center bg-[#ffebd6] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#fb6518] rounded-md text-[#fb6518] font-medium font-popp'>PetFoods</button>
+                    <button className='flex items-center text-[#ffebd6] px-5 lg:px-10 py-2 pb-[10px] rounded-md bg-[#E37025] font-medium font-popp'>AllProducts</button>
+                    <button className='flex items-center bg-[#e371253d] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#E37025] rounded-md text-[#E37025] font-medium font-popp'>DogFoods</button>
+                    <button className='flex items-center bg-[#e371253d] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#E37025] rounded-md text-[#E37025] font-medium font-popp'>CatFoods</button>
+                    <button className='flex items-center bg-[#e371253d] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#E37025] rounded-md text-[#E37025] font-medium font-popp'>CatTreats</button>
+                    <button className='flex items-center bg-[#e371253d] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#E37025] rounded-md text-[#E37025] font-medium font-popp'>DogTreats</button>
+                    <button className='flex items-center bg-[#e371253d] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#E37025] rounded-md text-[#E37025] font-medium font-popp'>PetFoods</button>
                 </div>
               
                 <Slider className='flex gap-3 bg-transparent z-0' {...settings}>

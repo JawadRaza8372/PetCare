@@ -11,7 +11,7 @@ export default function Navbar() {
     <>
       {/* Header Section */}
       <header style={{position:open? 'sticky':'fixed'}} className='container flex justify-between py-2 items-center relative'>
-        <h3 className='text-[#fb6518] font-bold text-3xl font-popp'>Pet.care</h3>
+        <h3 className='text-[#E37025] font-bold text-3xl font-popp'>Pet.care</h3>
         <div className=' text-2xl ml-auto md:hidden' onClick={() => setOpen(!open)}>
             {open ? <IoReorderThreeOutline className='text-3xl' /> : <IoCloseSharp />}
           </div>

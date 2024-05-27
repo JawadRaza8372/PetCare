@@ -5,7 +5,7 @@ import { GrInstagram } from "react-icons/gr";
 export default function Footer() {
   return (
     <>
-     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 bg-[#fa6e43] px-20 py-10'>
+     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 bg-[#E37025] px-20 py-10'>
         <div className='bg-transparent flex flex-col gap-3'>
             <h3 className='bg-transparent text-[20px] text-white text-center sm:text-start font-medium'>Pet.care</h3>
             <p className='bg-transparent text-[13px] md:text-[14px] text-white text-center sm:text-start'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
