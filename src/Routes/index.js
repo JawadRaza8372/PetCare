@@ -8,6 +8,7 @@ import IsbToPage from "../Pages/IsbToPage";
 import HopeToWalk from "../Pages/HopeToWalk";
 import WingsPage from "../Pages/WingsPage";
 import ScrollToTopComp from "../Components/ScrollToTopComp";
+import NotFound from "../Pages/NotFound";
 
 const index = () => {
   return (
@@ -21,6 +22,7 @@ const index = () => {
         <Route path="/journey" Component={IsbToPage} />
         <Route path="/hope" Component={HopeToWalk} />
         <Route path="/wings" Component={WingsPage} />
+        <Route path="*" Component={NotFound} />
       </Routes>
     </>
   );
