@@ -129,7 +129,7 @@ export default function Home() {
   return (
     <>
       <div className="container lg:px-28 flex flex-col md:flex-row py-16">
-        <div className="md:w-1/3 lg:w-[60%] flex flex-col gap-1 md:gap-4 justify-center">
+        <div className="md:w-[60%] flex flex-col gap-1 md:gap-4 justify-center">
           <h2 className="text-[16px] md:text-[20px] font-medium font-popp">
             {home.container1.firstTxt}
           </h2>
@@ -140,7 +140,7 @@ export default function Home() {
             {home.container1.thirdTxt}
           </p>
         </div>
-        <div className="md:w-1/4 lg:w-[40%] flex justify-center my-5 sm:my-0">
+        <div className="md:w-[40%] flex justify-center my-5 sm:my-0">
           <img src={HomeImg} className="w-[100%] md:w-[80%]" alt="my-img" />
         </div>
       </div>
