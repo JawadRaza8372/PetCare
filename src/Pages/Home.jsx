@@ -1,79 +1,146 @@
-import React from "react";
-import HomeImg from "../Utilities/1.png";
-import SecondImg from "../Utilities/2.png";
+import React, { useEffect, useLayoutEffect, useState } from "react";
+import HomeImg from "../Utils/1.png";
+import SecondImg from "../Utils/2.png";
 import Button2 from "../Components/Button2";
-import Petcare from "../Utilities/pet-care.png";
-import Petgift from "../Utilities/gift.png";
-import Homevisit from "../Utilities/home.png";
-import Veterinery from "../Utilities/interaction.png";
-import AnimalsMean from "../Utilities/3.png";
-import Pedigree from "../Utilities/pedigree.png";
-import CustomerSays from "../Utilities/4.png";
-import { IoIosStar } from "react-icons/io";
-import User from "../Utilities/user.jpg";
-import Footer from "../Layouts/Footer";
-import Slider from "react-slick";
+import Petcare from "../Utils/pet-care.png";
+import Petgift from "../Utils/gift.png";
+import Homevisit from "../Utils/home.png";
+import Veterinery from "../Utils/interaction.png";
+import AnimalsMean from "../Utils/3.png";
+// import CustomerSays from "../Utils/4.png";
+// import { IoIosStar } from "react-icons/io";
+// import User from "../Utils/user.jpg";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Petform from "../Utilities/pet-form.png";
-import Products from "../Components/Products";
+import Petform from "../Utils/pet-form.png";
 import textStrings from "../Utils/AllText";
+import { useNavigate, useLocation } from "react-router-dom";
 export default function Home() {
   const { home } = textStrings;
-  const OurProducts = [
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { name, email, subject, message } = formData;
+    const mailtoLink = `mailto:theanimalsjourney@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\n${message}`
+    )}`;
+    window.location.href = mailtoLink;
+  };
+  const hashlocation = useLocation()?.hash;
+  const navigation = useNavigate();
+  useEffect(() => {
+    if (hashlocation) {
+      const id = hashlocation.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) element.scrollIntoView();
+    }
+  }, [hashlocation]);
+  useLayoutEffect(() => {
+    if (hashlocation) {
+      const id = hashlocation.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) element.scrollIntoView();
+    }
+  }, [hashlocation]);
+  // const OurProducts = [
+  //   {
+  //     img: { Pedigree },
+  //     heading: "Sonima style BBQ",
+  //     size: "  All cat size",
+  //     price: "$70.00",
+  //   },
+  //   {
+  //     img: { Pedigree },
+  //     heading: "Sonima style BBQ",
+  //     size: "  All cat size",
+  //     price: "$70.00",
+  //   },
+  //   {
+  //     img: { Pedigree },
+  //     heading: "Sonima style BBQ",
+  //     size: "  All cat size",
+  //     price: "$70.00",
+  //   },
+  // ];
+  const ourWorkArray = [
     {
-      img: { Pedigree },
-      heading: "Sonima style BBQ",
-      size: "  All cat size",
-      price: "$70.00",
+      img: Petcare,
+      heading: home.container3.cardHeading1,
+      subHeading: home.container3.cardSubHeading1,
+      color: "bg-[#90ccff]",
+      onClickFun: () => navigation("/journey"),
     },
     {
-      img: { Pedigree },
-      heading: "Sonima style BBQ",
-      size: "  All cat size",
-      price: "$70.00",
+      img: Petgift,
+      heading: home.container3.cardHeading2,
+      subHeading: home.container3.cardSubHeading2,
+      color: "bg-[#cccccc]",
+      onClickFun: () => navigation("/hope"),
     },
     {
-      img: { Pedigree },
-      heading: "Sonima style BBQ",
-      size: "  All cat size",
-      price: "$70.00",
+      img: Homevisit,
+      heading: home.container3.cardHeading3,
+      subHeading: home.container3.cardSubHeading3,
+      color: "bg-[#3b4172b0]",
+      onClickFun: () => navigation("/tnvr"),
+    },
+    {
+      img: Veterinery,
+      heading: home.container3.cardHeading4,
+      subHeading: home.container3.cardSubHeading4,
+      color: "bg-[#67676ab5]",
+      onClickFun: () => navigation("/wings"),
     },
   ];
-  var settings = {
-    dots: false,
-    autoplay: true,
-    infinite: true,
-    speed: 700,
-    arrows: false,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  // var settings = {
+  //   dots: false,
+  //   autoplay: true,
+  //   infinite: true,
+  //   speed: 700,
+  //   arrows: false,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   responsive: [
+  //     {
+  //       breakpoint: 640,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ],
+  // };
   return (
     <>
       <div className="container lg:px-28 flex flex-col md:flex-row py-16">
-        <div className="md:w-1/2 lg:w-[30%] flex flex-col gap-1 md:gap-4 justify-center">
+        <div className="md:w-1/3 lg:w-[60%] flex flex-col gap-1 md:gap-4 justify-center">
           <h2 className="text-[16px] md:text-[20px] font-medium font-popp">
             {home.container1.firstTxt}
           </h2>
-          <h1 className="text-[25px] md:text-[46px] font-popp leading-[30px] sm:leading-[50px] tracking-wide font-bold">
+          <h1 className="text-[20px] md:text-[38px] font-popp leading-[30px] sm:leading-[50px] tracking-wide font-bold">
             {home.container1.secondTxt}
           </h1>
           <p className="text-[14px] font-popp md:text-[16px]">
             {home.container1.thirdTxt}
           </p>
-          <Button2 btn2={home.container1.fourthTxt} />
         </div>
-        <div className="md:w-1/2 lg:w-[70%] flex justify-center my-5 sm:my-0">
+        <div className="md:w-1/4 lg:w-[40%] flex justify-center my-5 sm:my-0">
           <img src={HomeImg} className="w-[100%] md:w-[80%]" alt="my-img" />
         </div>
       </div>
@@ -88,7 +155,7 @@ export default function Home() {
         <div className="md:w-[60%] lg:w-[50%] bg-transparent flex flex-col md:h-28 justify-center items-center sm:flex-row gap-4">
           <div className="flex flex-col bg-transparent sm:gap-1 items-center justify-center w-full">
             <h4 className="text-[35px] bg-transparent font-popp font-bold">
-              120K
+              999+
             </h4>
             <p className="text-[12px] bg-transparent font-popp font-normal">
               {home.container2.firstTxt}
@@ -104,7 +171,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col bg-transparent sm:gap-1 justify-center items-center w-full">
             <h4 className="text-[35px] bg-transparent font-popp font-bold">
-              70%
+              100+
             </h4>
             <p className="text-[12px] bg-transparent font-popp font-normal">
               {home.container2.thirdTxt}
@@ -113,7 +180,7 @@ export default function Home() {
         </div>
       </div>
       {/*Our Services here */}
-      <div className="container my-16">
+      <div id="work" className="container my-8 py-8">
         <h1 className="text-center font-bold text-[33px] font-popp">
           {home.container3.firstTxt}
         </h1>
@@ -121,58 +188,32 @@ export default function Home() {
           {home.container3.secondTxt}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5">
-          <div className="flex flex-col gap-1 shadow-xl rounded-xl px-5 py-7 bg-[#e371253d] border border-[#fff6ed] text-center">
-            <img
-              src={Petcare}
-              className="bg-[#90ccff] p-3 m-auto rounded-md"
-              alt="my-img"
-            />
-            <h4 className="text-[20px] bg-transparent font-bold font-popp">
-              {home.container3.cardHeading1}
-            </h4>
-            <p className="text-[13px] md:text-[14px] bg-transparent px-3 font-normal font-popp">
-              {home.container3.cardSubHeading1}
-            </p>
-          </div>
-          <div className="flex flex-col gap-1 shadow-xl rounded-xl px-5 py-7 bg-[#e371253d] border border-[#fff6ed] text-center">
-            <img
-              src={Petgift}
-              className="bg-[#cccccc] p-3 m-auto rounded-md"
-              alt="my-img"
-            />
-            <h4 className="text-[20px] bg-transparent font-bold font-popp">
-              {home.container3.cardHeading2}
-            </h4>
-            <p className="text-[13px] md:text-[14px] bg-transparent px-3 font-normal font-popp">
-              {home.container3.cardSubHeading2}
-            </p>
-          </div>
-          <div className="flex flex-col gap-1 shadow-xl rounded-xl px-5 py-7 bg-[#e371253d] border border-[#fff6ed] text-center">
-            <img
-              src={Homevisit}
-              className="bg-[#3b4172b0] p-3 m-auto rounded-md"
-              alt="my-img"
-            />
-            <h4 className="text-[20px] bg-transparent font-bold font-popp">
-              {home.container3.cardHeading3}
-            </h4>
-            <p className="text-[13px] md:text-[14px] bg-transparent px-3 font-normal font-popp">
-              {home.container3.cardSubHeading3}
-            </p>
-          </div>
-          <div className="flex flex-col gap-1 shadow-xl rounded-xl px-5 py-7 bg-[#e371253d] border border-[#fff6ed] text-center">
-            <img
-              src={Veterinery}
-              className="bg-[#67676ab5] p-3 m-auto rounded-md"
-              alt="my-img"
-            />
-            <h4 className="text-[20px] bg-transparent font-bold font-popp">
-              {home.container3.cardHeading4}
-            </h4>
-            <p className="text-[13px] md:text-[14px] bg-transparent px-3 font-normal font-popp">
-              {home.container3.cardSubHeading4}
-            </p>
-          </div>
+          {ourWorkArray?.map((dat, index) => (
+            <div
+              style={{ cursor: "pointer" }}
+              onClick={dat.onClickFun}
+              key={index}
+              className="flex flex-col gap-1 shadow-xl rounded-xl px-5 py-7 bg-[#e371253d] border border-[#fff6ed] text-center"
+            >
+              <img
+                src={dat?.img}
+                className={"p-3 m-auto rounded-md " + dat?.color}
+                alt="my-img"
+              />
+              <h4 className="text-[16px] bg-transparent font-bold font-popp">
+                {dat?.heading}
+              </h4>
+              <p className="text-[13px] md:text-[14px] bg-transparent px-3 font-normal font-popp">
+                {`${dat?.subHeading}`.substring(0, 100)} ...
+              </p>
+            </div>
+          ))}
+        </div>
+        <div
+          onClick={() => navigation("/work")}
+          className="flex items-center justify-center my-[40px] w-100"
+        >
+          <Button2 extraStyle={{ marginRight: 0 }} btn2={"Read More"} />
         </div>
       </div>
       {/*Animals mean section */}
@@ -191,11 +232,11 @@ export default function Home() {
           <p className="text-[13px] md:text-[15px] bg-transparent ">
             {home.container4.subHeading}
           </p>
-          <Button2 btn2={home.container4.btnTxt} />
+          {/* <Button2 btn2={home.container4.btnTxt} /> */}
         </div>
       </div>
       {/* Best Selling Products */}
-      <div className="container my-16 flex flex-col gap-10">
+      {/* <div className="container my-16 flex flex-col gap-10">
         <h1 className="text-center font-bold text-[25px] leading-[30px] md:text-[33px] md:leading-[40px] font-popp">
           Our Best Selling Products
         </h1>
@@ -232,9 +273,9 @@ export default function Home() {
             );
           })}
         </Slider>
-      </div>
+      </div> */}
       {/*Client says section */}
-      <div className="container my-16">
+      {/* <div className="container my-16">
         <div className="flex flex-col md:flex-row p-5 sm:p-10 lg:p-0 pb-0 pl-0 bg-[#e371253d] rounded-xl">
           <div className="md:w-1/2 bg-transparent ">
             <img
@@ -274,9 +315,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* contact page */}
-      <div className=" my-16 container">
+      <div id="contact" className=" my-8 py-8 container">
         <div className="bg-[#e371253d] p-5 rounded-xl shadow-xl md:p-10 flex flex-col md:flex-row">
           <div className="md:w-1/2 bg-transparent">
             <img src={Petform} className="bg-transparent" alt="my-img" />
@@ -286,7 +327,10 @@ export default function Home() {
               Contact Us
             </h1>
 
-            <form className="flex flex-col gap-5 bg-transparent mt-3">
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-5 bg-transparent mt-3"
+            >
               <div className="flex bg-transparent flex-col md:flex-row gap-3 md:gap-5 w-full ">
                 <div className="w-full bg-transparent">
                   <label className="bg-transparent" for="">
@@ -298,6 +342,13 @@ export default function Home() {
                   <br />
                   <input
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    required={true}
+                    minLength={3}
+                    onChange={handleChange}
+                    autoComplete="off"
+                    autoCorrect="off"
                     className="bg-transparent outline-none border border-gray-500 focus:border-green rounded-sm p-2 w-full"
                   />
                 </div>
@@ -310,7 +361,14 @@ export default function Home() {
                   </label>{" "}
                   <br />
                   <input
-                    type="text"
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required={true}
+                    minLength={5}
+                    autoComplete="off"
+                    autoCorrect="off"
                     className="bg-transparent outline-none border border-gray-500 focus:border-green rounded-sm p-2 w-full"
                   />
                 </div>
@@ -322,7 +380,14 @@ export default function Home() {
                 </label>{" "}
                 <br />
                 <input
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  autoComplete="off"
+                  autoCorrect="off"
                   type="text"
+                  required={true}
+                  minLength={5}
                   className="bg-transparent outline-none border border-gray-500 focus:border-green rounded-sm p-2 w-full"
                 />
               </div>
@@ -333,19 +398,27 @@ export default function Home() {
                 </label>{" "}
                 <br />
                 <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="5"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required={true}
+                  rows={4}
+                  autoComplete="off"
+                  autoCorrect="off"
+                  minLength={15}
                   className="bg-transparent outline-none border border-gray-500 focus:border-green rounded-sm p-2 w-full"
-                ></textarea>
+                />
               </div>
-              <Button2 btn2="Send Message" />
+              <button
+                type="submit"
+                className="text-[14px] font-popp mt-2 md:mt-0 mr-auto md:text-[16px] font-medium bg-[#E37025] duration-700 hover:bg-black cursor-pointer text-white rounded-md px-4 py-2 pb-[10px]"
+              >
+                Send Message
+              </button>
             </form>
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

@@ -1,38 +1,38 @@
 const textStrings = {
   home: {
     container1: {
-      firstTxt: "The best patcore services",
-      secondTxt: "We'are Here to Care of Little Pets",
+      firstTxt: `Welcome to The Animal's Journey`,
+      secondTxt: "A world where humans and animals coexist harmoniously",
       thirdTxt:
-        "Our Highly skilled professional associates love pets as much as you do. and we offer a wide range of pet services.",
+        "Our Highly skilled professional associates love pets as much as you do.\nWe offer a wide range of pet services.",
       fourthTxt: "Our Services",
     },
     container2: {
-      firstTxt: "Nutritional complete",
+      firstTxt: "TNVR",
       secondTxt: "Products sale",
-      thirdTxt: "Client Satisfaction",
+      thirdTxt: "Animal Rescued",
     },
     container3: {
-      firstTxt: "Our Services",
+      firstTxt: "Our Work",
       secondTxt:
-        "As a team of experienced Pet owners and lovers, we really get to know you and your pet.",
-      cardHeading1: "Pet Care",
-      cardSubHeading1:
-        "Pet Care dolor sit amet consectetur adipisicing elit. Optio nulla enim ullam, distinctio nesciunt officia.",
-      cardHeading2: "Pet Gifts",
+        "A team of veterinary professionals and animal Lovers where every animal's journey starts with hope, care and path to a loving home.",
+      cardHeading1: "Islamabad to Chicago",
       cardSubHeading2:
-        "Pet Gifts dolor sit amet consectetur adipisicing elit. Optio nulla enim ullam, distinctio nesciunt officia.",
-      cardHeading3: "Home Visit",
+        "In the busy streets of the capital city Islamabad, among the rushing of beeping vehicles and",
+      cardHeading2: "Hope for Walk",
+      cardSubHeading1:
+        "In the heart of Pakistan's capital city, Islamabad, near the Marriot Hotel, a remarkable story began",
+      cardHeading3: "TNVR Program",
       cardSubHeading3:
-        "Home Visit dolor sit amet consectetur adipisicing elit. Optio nulla enim ullam, distinctio nesciunt officia.",
-      cardHeading4: "Veterinary",
+        "The Trap-Neuter-Vaccinate-Return (TNVR) program is a humane and effective approach for managing",
+      cardHeading4: "Wings of Resilience",
       cardSubHeading4:
-        "Veterinary dolor sit amet consectetur adipisicing elit. Optio nulla enim ullam, distinctio nesciunt officia.",
+        "On the last day of May 2024 at Jumma prayer time, in the rough terrain of Margalla Hills, a fierce wildfire",
     },
     container4: {
-      mainHeading: "Animals have come to mean so much in our lives",
+      mainHeading: "Collaborations",
       subHeading:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos sapiente neque quam voluptatibus doloribus, ab obcaecati alias eius sit, eligendi repellat culpa officia, dolorem deleniti qui fugiat reprehenderit repellendus quae. Nisi, enim excepturi expedita fugit natus tenetur itaque ea.",
+        "Royal Pets Hospital and The Animal Journey Rescue Organization are teaming up to make a positive impact on animal welfare. Our joint efforts will include community outreach events, cross-referrals, fundraising campaigns, and awareness initiatives.\nTogether, we can create a stronger, more compassionate community for animals.",
       btnTxt: "Our Services",
     },
     container5: {
