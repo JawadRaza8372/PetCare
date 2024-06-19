@@ -4,7 +4,7 @@ const textStrings = {
       firstTxt: `Welcome to The Animal's Journey`,
       secondTxt: "A world where humans and animals coexist harmoniously",
       thirdTxt:
-        "Our Highly skilled professional associates love pets as much as you do.\nWe offer a wide range of pet services.",
+        "Our mission is to provide a safe haven for animals who have been abandoned, abused, or are in danger, and to give them a second chance at life. We believe that every animal deserves love, care, and respect. Our team works tirelessly to rescue animals from harmful situations, provide them with necessary medical care, and find them loving forever homes. We also strive to raise awareness about animal welfare and promote responsible pet ownership. At The Animal Journey, we embark on a journey with each animal we rescue, guiding them from a place of fear and uncertainty to a life filled with love and care. We are committed to making a difference, one animal at a time.",
       fourthTxt: "Our Services",
     },
     container2: {
