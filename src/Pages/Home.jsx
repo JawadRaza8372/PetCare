@@ -7,6 +7,7 @@ import Petgift from "../Utils/gift.png";
 import Homevisit from "../Utils/home.png";
 import Veterinery from "../Utils/interaction.png";
 import AnimalsMean from "../Utils/3.png";
+import HomeImgMission from "../Utils/ourmission.jpg";
 // import CustomerSays from "../Utils/4.png";
 // import { IoIosStar } from "react-icons/io";
 // import User from "../Utils/user.jpg";
@@ -128,22 +129,38 @@ export default function Home() {
   // };
   return (
     <>
-      <div className="container lg:px-28 flex flex-col md:flex-row py-16">
+      <div className="container lg:px-28 flex flex-col md:flex-row pt-16 pb-8">
         <div className="md:w-[60%] flex flex-col gap-1 md:gap-4 justify-center">
-          <h2 className="text-[16px] md:text-[20px] font-medium font-popp">
+          <h3 className="text-[16px] md:text-[20px] font-medium font-popp">
             {home.container1.firstTxt}
-          </h2>
-          <h1 className="text-[20px] md:text-[38px] font-popp leading-[30px] sm:leading-[50px] tracking-wide font-bold">
+          </h3>
+          <h1 className="text-[18px] md:text-[32px] font-popp leading-[30px] sm:leading-[50px] tracking-wide font-bold">
             {home.container1.secondTxt}
           </h1>
+          <h2
+            className="text-[16px] md:text-[20px] font-medium font-popp"
+            style={{ color: "#e37025" }}
+          >
+            What is Animal Journey?
+          </h2>
           <p className="text-[14px] font-popp md:text-[16px]">
-            {home.container1.thirdTxt}
+            In a world where countless stray animals roam the streets, it is
+            imperative to establish a compassionate and effective solution to
+            address their plight. "The Animal's Journey" is a proposed stray
+            animal shelter project aimed at providing sanctuary, medical care,
+            and support to these sensitive creatures. Through a multi-faceted
+            approach, we aim to not only rescue and rehabilitate stray animals
+            but also raise awareness about their welfare and promote responsible
+            pet ownership. The Animal Journey is basically a non-profit
+            organization dedicated to the rescue, rehabilitation, and rehoming
+            of animals in need.
           </p>
         </div>
         <div className="md:w-[40%] flex justify-center my-5 sm:my-0">
           <img src={HomeImg} className="w-[100%] md:w-[80%]" alt="my-img" />
         </div>
       </div>
+
       <div className="md:px-20 lg:px-32 bg-[#e371253d] flex flex-col md:flex-row gap-4 md:h-28 pb-10 my-10">
         <div className="md:w-[40%] bg-transparent">
           <img
@@ -235,87 +252,33 @@ export default function Home() {
           {/* <Button2 btn2={home.container4.btnTxt} /> */}
         </div>
       </div>
-      {/* Best Selling Products */}
-      {/* <div className="container my-16 flex flex-col gap-10">
-        <h1 className="text-center font-bold text-[25px] leading-[30px] md:text-[33px] md:leading-[40px] font-popp">
-          Our Best Selling Products
-        </h1>
-        <div className="flex overflow-auto gap-3 justify-around">
-          <button className="flex items-center text-[#ffebd6] px-5 lg:px-10 py-2 pb-[10px] rounded-md bg-[#E37025] font-medium font-popp">
-            AllProducts
-          </button>
-          <button className="flex items-center bg-[#e371253d] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#E37025] rounded-md text-[#E37025] font-medium font-popp">
-            DogFoods
-          </button>
-          <button className="flex items-center bg-[#e371253d] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#E37025] rounded-md text-[#E37025] font-medium font-popp">
-            CatFoods
-          </button>
-          <button className="flex items-center bg-[#e371253d] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#E37025] rounded-md text-[#E37025] font-medium font-popp">
-            CatTreats
-          </button>
-          <button className="flex items-center bg-[#e371253d] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#E37025] rounded-md text-[#E37025] font-medium font-popp">
-            DogTreats
-          </button>
-          <button className="flex items-center bg-[#e371253d] px-5 text-[13px] md:text-[16px] lg:px-10 py-2 pb-[10px] duration-700 hover:text-[#ffebd6] hover:bg-[#E37025] rounded-md text-[#E37025] font-medium font-popp">
-            PetFoods
-          </button>
+      <div className="container lg:px-28 flex flex-col md:flex-row pt-16 pb-8">
+        <div className="md:w-[60%] flex flex-col gap-1 md:gap-4 justify-center">
+          <h1 className="text-[18px] md:text-[32px] font-popp leading-[30px] sm:leading-[50px] tracking-wide font-bold">
+            Our Mission
+          </h1>
+          <p className="text-[14px] font-popp md:text-[16px]">
+            Our mission is to provide a safe haven for animals who have been
+            abandoned, abused, or are in danger, and to give them a second
+            chance at life. We believe that every animal deserves love, care,
+            and respect. Our team works tirelessly to rescue animals from
+            harmful situations, provide them with necessary medical care, and
+            find them loving forever homes. We also strive to raise awareness
+            about animal welfare and promote responsible pet ownership. At The
+            Animal Journey, we embark on a journey with each animal we rescue,
+            guiding them from a place of fear and uncertainty to a life filled
+            with love and care. We are committed to making a difference, one
+            animal at a time.
+          </p>
         </div>
-
-        <Slider className="flex gap-3 bg-transparent z-0" {...settings}>
-          {OurProducts.map((val) => {
-            return (
-              <Products
-                img={val.img}
-                heading={val.heading}
-                size={val.size}
-                price={val.price}
-              />
-            );
-          })}
-        </Slider>
-      </div> */}
-      {/*Client says section */}
-      {/* <div className="container my-16">
-        <div className="flex flex-col md:flex-row p-5 sm:p-10 lg:p-0 pb-0 pl-0 bg-[#e371253d] rounded-xl">
-          <div className="md:w-1/2 bg-transparent ">
-            <img
-              src={CustomerSays}
-              className=" bg-transparent w-[100%] lg:w-[90%]"
-              alt=""
-            />
-          </div>
-          <div className="md:w-1/2 p-5 sm:p-10 bg-transparent flex flex-col gap-1 md:gap-3 justify-center">
-            <h1 className=" text-[25px] leading-[30px] md:text-[35px] font-bold bg-transparent md:leading-[40px] font-popp">
-              {home.container5.mainHeading}
-            </h1>
-            <p className="text-[13px] md:text-[15px] bg-transparent ">
-              {home.container4.subHeading}
-            </p>
-            <div className="bg-transparent flex gap-1">
-              <IoIosStar className="bg-transparent text-[15px] text-[#f96b40] md:text-[19px]" />
-              <IoIosStar className="bg-transparent text-[15px] text-[#f96b40] md:text-[19px]" />
-              <IoIosStar className="bg-transparent text-[15px] text-[#f96b40] md:text-[19px]" />
-              <IoIosStar className="bg-transparent text-[15px] text-[#f96b40] md:text-[19px]" />
-              <IoIosStar className="bg-transparent text-[15px] text-[#f96b40] md:text-[19px]" />
-            </div>
-            <div className="bg-transparent flex items-center gap-1 mt-3">
-              <img
-                src={User}
-                className="w-[50px] h-[50px] rounded-full bg-transparent"
-                alt="my-img"
-              />
-              <div className="bg-transparent">
-                <h3 className="bg-transparent text-[15px] md:text-[17px] font-bold">
-                  {home.container5.clientName}
-                </h3>
-                <p className="bg-transparent text-[13px] md:text-[15px]">
-                  {home.container5.clientRank}
-                </p>
-              </div>
-            </div>
-          </div>
+        <div className="md:w-[40%] flex justify-center my-5 sm:my-0">
+          <img
+            src={HomeImgMission}
+            className="w-[100%] md:w-[80%]"
+            alt="my-img"
+          />
         </div>
-      </div> */}
+      </div>
       {/* contact page */}
       <div id="contact" className=" my-8 py-8 container">
         <div className="bg-[#e371253d] p-5 rounded-xl shadow-xl md:p-10 flex flex-col md:flex-row">
