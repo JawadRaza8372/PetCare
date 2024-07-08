@@ -3,6 +3,7 @@ import HeroTemplate from "../Components/HeroTemplate";
 import AboutUsHeading from "../Components/AboutUsHeading";
 import AboutUsPara from "../Components/AboutUsPara";
 import AboutUsSubHeading from "../Components/AboutUsSubHeading";
+import BlogImages from "../Components/BlogImages";
 
 const IsbToPage = () => {
   return (
@@ -18,9 +19,23 @@ const IsbToPage = () => {
       <AboutUsPara
         content={`Mr. Ahmed Khan, a compassionate individual with a love for animals, discovered Journey (the name of the pet that was rescued) near the Marriot Hotel. The story began when Mr. Ahmed Khan was in Pakistan on a business tour and was staying at the Marriot Hotel. One day he was walking in front of the Marriott Hotel and the journey was with them, as they reached the corner. The bunch of Grey Hounds attacked them and Journey came in front of them to protect them from the Grey Hounds. They injured the Journey. Mr. Ahmed Khan unable to ignore her difficulty, decided to rescue her, bringing her to the clinic named Royal Pets Hospital. We welcomed Journey with open arms, ready to provide her with the care, she desperately needed. He was so much inspired by the behavior of Journey that he decided to bring her with him to the USA.`}
       />
+      <img
+        src={require("../Utils/isb1.jpg")}
+        alt="Isb to chicago 2"
+        className="w-full h-auto max-h-[450px] mt-[30px] mb-[30px]"
+        style={{ objectFit: "contain" }}
+      />
       <AboutUsSubHeading content={`Rehabilitation`} />
       <AboutUsPara
         content={`Journey remained for six months in Royal Pets Hospital and that became a part of our family. We provided her with all the necessary care - from spaying to vaccinations. We ensured she was healthy, comfortable, and most importantly, loved. She was a quick learner, adapting to her new environment with surprising ease. Her playful nature and gentle demeanor quickly won our hearts. Despite her difficult past, she showed resilience, embodying the spirit of a true survivor.`}
+      />
+      <BlogImages
+        image1={require("../Utils/isb2.jpg")}
+        image2={require("../Utils/isb3.jpg")}
+        image3={require("../Utils/isb4.jpg")}
+        image1Alt={"Isb to chicago 2"}
+        image2Alt={"Isb to chicago 3"}
+        image3Alt={"Isb to chicago 4"}
       />
       <AboutUsSubHeading content={`The Journey`} />
       <AboutUsPara

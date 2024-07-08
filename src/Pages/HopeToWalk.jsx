@@ -2,6 +2,7 @@ import React from "react";
 import HeroTemplate from "../Components/HeroTemplate";
 import AboutUsPara from "../Components/AboutUsPara";
 import AboutUsSubHeading from "../Components/AboutUsSubHeading";
+import BlogImages from "../Components/BlogImages";
 
 const HopeToWalk = () => {
   return (
@@ -27,6 +28,14 @@ const HopeToWalk = () => {
         />
         <AboutUsPara
           content={`After surgery, Hope remained in our hospital for 15 days for medication and post-operative care. In the days that followed, Hope showed incredible resilience. Each day, he grew stronger, his spirit undeterred by the ordeal he had been through. Our team was with him every step of the way, providing him with the care and love he needed to recover.`}
+        />
+        <BlogImages
+          image1={require("../Utils/hope1.jpg")}
+          image2={require("../Utils/hope2.jpg")}
+          image3={require("../Utils/hope3.jpg")}
+          image1Alt={"Hope for walk 1"}
+          image2Alt={"Hope for walk 2"}
+          image3Alt={"Hope for walk 3"}
         />
         <AboutUsPara
           content={`Hope’s journey was not just a physical recovery, but also an emotional one. He learned to trust again, to play, and to enjoy the company of his caregivers and the other animals at our facility.`}

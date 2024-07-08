@@ -33,6 +33,12 @@ function TNVRProgram() {
             name={`Return`}
             content={`After veterinary care, the cats are returned to their outdoor locations.`}
           />
+          <img
+            src={require("../Utils/tnvr1.jpg")}
+            alt="TNVR Program"
+            className="w-full h-auto max-h-[450px] mt-[30px] mb-[30px]"
+            style={{ objectFit: "contain" }}
+          />
           <AboutUsSubHeading
             content={`Benefits of TNVR for Community Cats and Dogs:`}
           />
