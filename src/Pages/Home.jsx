@@ -160,7 +160,34 @@ export default function Home() {
           <img src={HomeImg} className="w-[100%] md:w-[80%]" alt="my-img" />
         </div>
       </div>
-
+      <div className="container lg:px-28 flex flex-col md:flex-row pt-4 pb-8">
+        <div className="md:w-[60%] flex flex-col gap-1 md:gap-4 justify-center">
+          <h1 className="text-center lg:text-left text-[18px] md:text-[32px] font-popp leading-[30px] sm:leading-[50px] tracking-wide font-bold">
+            Our Mission
+          </h1>
+          <p className="text-[14px] font-popp md:text-[16px]">
+            Our mission is to provide a safe haven for animals who have been
+            abandoned, abused, or are in danger, and to give them a second
+            chance at life. We believe that every animal deserves love, care,
+            and respect. Our team works tirelessly to rescue animals from
+            harmful situations, provide them with necessary medical care, and
+            find them loving forever homes. We also strive to raise awareness
+            about animal welfare and promote responsible pet ownership. At The
+            Animal Journey, we embark on a journey with each animal we rescue,
+            guiding them from a place of fear and uncertainty to a life filled
+            with love and care. We are committed to making a difference, one
+            animal at a time.
+          </p>
+        </div>
+        <div className="md:flex hidden md:w-[40%] justify-center my-5 sm:my-0">
+          <img
+            src={HomeImgMission}
+            className="w-[100%]"
+            style={{ objectFit: "cover" }}
+            alt="my-img"
+          />
+        </div>
+      </div>
       <div className="md:px-20 lg:px-32 bg-[#e371253d] flex flex-col md:flex-row gap-4 md:h-28 pb-10 my-10">
         <div className="md:w-[40%] bg-transparent">
           <img
@@ -250,33 +277,6 @@ export default function Home() {
             {home.container4.subHeading}
           </p>
           {/* <Button2 btn2={home.container4.btnTxt} /> */}
-        </div>
-      </div>
-      <div className="container lg:px-28 flex flex-col md:flex-row pt-16 pb-8">
-        <div className="md:w-[60%] flex flex-col gap-1 md:gap-4 justify-center">
-          <h1 className="text-[18px] md:text-[32px] font-popp leading-[30px] sm:leading-[50px] tracking-wide font-bold">
-            Our Mission
-          </h1>
-          <p className="text-[14px] font-popp md:text-[16px]">
-            Our mission is to provide a safe haven for animals who have been
-            abandoned, abused, or are in danger, and to give them a second
-            chance at life. We believe that every animal deserves love, care,
-            and respect. Our team works tirelessly to rescue animals from
-            harmful situations, provide them with necessary medical care, and
-            find them loving forever homes. We also strive to raise awareness
-            about animal welfare and promote responsible pet ownership. At The
-            Animal Journey, we embark on a journey with each animal we rescue,
-            guiding them from a place of fear and uncertainty to a life filled
-            with love and care. We are committed to making a difference, one
-            animal at a time.
-          </p>
-        </div>
-        <div className="md:w-[40%] flex justify-center my-5 sm:my-0">
-          <img
-            src={HomeImgMission}
-            className="w-[100%] md:w-[80%]"
-            alt="my-img"
-          />
         </div>
       </div>
       {/* contact page */}
