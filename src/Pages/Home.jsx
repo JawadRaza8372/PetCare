@@ -17,6 +17,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Petform from "../Utils/pet-form.png";
 import textStrings from "../Utils/AllText";
 import { useNavigate, useLocation } from "react-router-dom";
+const hospitalAddress = "Street 55, Najam Market, F-8/4, Islamabad";
 export default function Home() {
   const { home } = textStrings;
   const [formData, setFormData] = useState({
@@ -286,7 +287,7 @@ export default function Home() {
             <img src={Petform} className="bg-transparent" alt="my-img" />
           </div>
           <div className="md:w-1/2 bg-transparent">
-            <h1 className=" text-[25px] leading-[30px] md:text-[35px] font-bold bg-transparent md:leading-[40px] font-popp">
+            <h1 className="text-[25px] leading-[30px] md:text-[35px] font-bold bg-transparent md:leading-[40px] font-popp">
               Contact Us
             </h1>
 
@@ -379,6 +380,10 @@ export default function Home() {
                 Send Message
               </button>
             </form>
+            <h2 className="my-3 text-[18px] md:text-[20px] font-bold bg-transparent font-popp">
+              Visit Us
+            </h2>
+            <h5 className="bg-transparent font-popp">{hospitalAddress}</h5>
           </div>
         </div>
       </div>
