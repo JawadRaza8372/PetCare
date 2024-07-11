@@ -275,6 +275,13 @@ export default function Home() {
             {home.container4.mainHeading}
           </h1>
           <p className="text-[13px] md:text-[15px] bg-transparent ">
+            <a
+              className="bg-transparent font-bold"
+              style={{ color: "black" }}
+              href="https://royalpetshospital.com/"
+            >
+              <u className="bg-transparent">Royal Pets Hospital</u>
+            </a>{" "}
             {home.container4.subHeading}
           </p>
           {/* <Button2 btn2={home.container4.btnTxt} /> */}

@@ -32,7 +32,7 @@ const textStrings = {
     container4: {
       mainHeading: "Collaborations",
       subHeading:
-        "Royal Pets Hospital and The Animal Journey Rescue Organization are teaming up to make a positive impact on animal welfare. Our joint efforts will include community outreach events, cross-referrals, fundraising campaigns, and awareness initiatives.\nTogether, we can create a stronger, more compassionate community for animals.",
+        " and The Animal Journey Rescue Organization are teaming up to make a positive impact on animal welfare. Our joint efforts will include community outreach events, cross-referrals, fundraising campaigns, and awareness initiatives.\nTogether, we can create a stronger, more compassionate community for animals.",
       btnTxt: "Our Services",
     },
     container5: {
